@@ -1,7 +1,7 @@
 loginData:
-  - userName: Rabindra_PROD
-    password: Admin_PROD
+  - userName: Rabindra_DEV
+    password: Admin_DEV
     path: ${sys:user.dir}
-  - userName: Manikant_PROD
+  - userName: Manikant_DEV
     password: Abcd_PROD
     path: ${sys:user.dir}

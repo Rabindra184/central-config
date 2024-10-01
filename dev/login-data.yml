@@ -3,5 +3,5 @@ loginData:
     password: Admin_DEV
     path: ${sys:user.dir}
   - userName: Manikant_DEV
-    password: Abcd_PROD
+    password: Abcd_DEV
     path: ${sys:user.dir}

@@ -1,0 +1,49 @@
+api:
+  baseUri: https://prod-edge-cat.example.com:8443/org-services-admin-ws
+  username: prod_user
+  password: a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6
+  groups:
+    - edgePt:
+        clientId: prod_client
+        secret: prod_secret
+    - edgeManager:
+        clientId: prod_client
+        secret: prod_secret
+    - edgeInternal:
+        clientId: prod_secret
+        secret: prod_client
+database:
+  edge:
+    server: prod_edge_server
+    type: ms_sql_server
+    username: prod_edge_user
+    password: prod_edge_password
+    port: 1433
+    databases:
+      msg:
+        name: prod_messaging
+      org:
+        name: prod_services
+      pss:
+        name: prod_allen
+  engage:
+    server: 192.168.1.100
+    type: postgres
+    username: prod_engage_user
+    password: prod_engage_password
+    port: '5432'
+    databases:
+      engage:
+        name: prod_engage
+      audit:
+        name: prod_audit
+        port: '5433'
+  voice:
+    server: prod_voice_server
+    type: ms_sql_server
+    username: prod_voice_user
+    password: prod_voice_password
+    port: 5434
+    databases:
+      voice_db:
+        name: prod_voice

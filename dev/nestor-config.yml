@@ -1,0 +1,49 @@
+api:
+  baseUri: https://dev-edge-cat.example.com:8443/org-services-admin-ws
+  username: dev_user
+  password: 9a2e6f4c-d918-4a67-982b-2f6c9c4f5d2a
+  groups:
+    - edgePt:
+        clientId: dev_dummy
+        secret: dev_secret
+    - edgeManager:
+        clientId: dev_dummy
+        secret: dev_secret
+    - edgeInternal:
+        clientId: dev_secret
+        secret: dev_dummy
+database:
+  edge:
+    server: dev_edge_server
+    type: dev_type
+    username: dev_username
+    password: dev_password
+    port: 1433
+    databases:
+      msg:
+        name: dev_messaging
+      org:
+        name: dev_services
+      pss:
+        name: dev_allen
+  engage:
+    server: 10.10.10.10
+    type: postgres
+    username: dev_engage_user
+    password: dev_engage_pass
+    port: '5432'
+    databases:
+      engage:
+        name: dev_engage
+      audit:
+        name: dev_audit
+        port: '5433'
+  voice:
+    server: dev_voice_server
+    type: ms_sql_server
+    username: dev_voice_user
+    password: dev_voice_pass
+    port: 5434
+    databases:
+      voice_db:
+        name: dev_voice

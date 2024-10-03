@@ -1,0 +1,49 @@
+api:
+  baseUri: https://<baseUri>:<port>/org-services-admin-ws
+  username: <api_username>
+  password: <api_password>
+  groups:
+    - edgePt:
+        clientId: <edgePt_clientId>
+        secret: <edgePt_secret>
+    - edgeManager:
+        clientId: <edgeManager_clientId>
+        secret: <edgeManager_secret>
+    - edgeInternal:
+        clientId: <edgeInternal_clientId>
+        secret: <edgeInternal_secret>
+database:
+  edge:
+    server: <edge_server>
+    type: <edge_type>
+    username: <edge_username>
+    password: <edge_password>
+    port: <edge_port>
+    databases:
+      msg:
+        name: <msg_database_name>
+      org:
+        name: <org_database_name>
+      pss:
+        name: <pss_database_name>
+  engage:
+    server: <engage_server>
+    type: <engage_type>
+    username: <engage_username>
+    password: <engage_password>
+    port: <engage_port>
+    databases:
+      engage:
+        name: <engage_database_name>
+      audit:
+        name: <audit_database_name>
+        port: <audit_port>
+  voice:
+    server: <voice_server>
+    type: <voice_type>
+    username: <voice_username>
+    password: <voice_password>
+    port: <voice_port>
+    databases:
+      voice_db:
+        name: <voice_database_name>
